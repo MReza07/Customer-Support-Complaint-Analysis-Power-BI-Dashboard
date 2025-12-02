@@ -64,24 +64,42 @@ Trend visualization for 12 months
 
 The dataset includes the following important columns:
 
-Column Name	Description
+Column Name
+Description
 TicketID	Unique ID for each complaint
+
 CustomerID	Unique customer identifier
+
 CreatedDate	Complaint creation date
+
 ResolvedDate	Issue resolution date
+
 Status	Complaint status (Open, Closed, In-Progress, etc.)
+
 IssueType	Main category of complaint
+
 SubIssue	Detailed sub-category
+
 Channel	Mode of complaint (Call, Chat, Email, etc.)
+
 Priority	Urgency level
+
 ResolutionTimeHours	Hours taken to resolve
+
 SLA_DeadlineHours	SLA commitment hours
+
 SLA_Compliance	Yes / No / No Response
+
 SatisfactionScore	Customer feedback rating
+
 AssignedTeam	Team handling the complaint
+
 Region	Customer’s region
+
 PlanType	Postpaid / Prepaid categories
+
 DeviceType	Android, iPhone, MiFi, Tablet, etc.
+
 ComplaintDescription	Text details of complaint
 🛠️ Tools & Technologies Used
 
@@ -152,4 +170,4 @@ Add AI/ML-based issue classification
 If you like this project or want to collaborate:
 
 📧 Email:reazulrepon@gmail.com
-🔗 GitHub Portfolio:
+🔗 GitHub Portfolio:https://github.com/MReza07/Customer-Support-Complaint-Analysis-Power-BI-Dashboard
