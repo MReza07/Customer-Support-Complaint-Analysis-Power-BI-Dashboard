@@ -1,82 +1,109 @@
-# 📊 Customer Support Complaint Analysis – Power BI Dashboard  
+📊 Customer Support Complaints Analysis – Power BI Dashboard
 
-A complete end-to-end Customer Support Analytics project built using **Power BI**, designed to analyze customer complaints, SLA performance, resolution efficiency, regional patterns, and customer satisfaction.  
+This project presents an end-to-end Customer Support Complaint Analysis using a real-world inspired dataset. The goal is to help organizations monitor customer issue trends, evaluate SLA performance, and understand customer experience across channels, regions, and device types. The entire solution includes data cleaning, transformation, modeling, DAX measures, and an interactive Power BI dashboard.
+🚀 Project Overview
 
-This dashboard helps organizations identify complaint trends, optimize support operations, and improve customer experience through data-driven insights.
+Customer support teams handle large volumes of complaints through multiple channels such as email, chat, social media and calls. To improve service quality, it is essential to track complaint trends, SLA compliance, customer satisfaction, and resolution efficiency.
 
----
+This Power BI report provides clear visibility into:
 
-## 🚀 Project Overview  
+Total complaints received
 
-This project analyzes customer complaints received across multiple channels (App, Phone, Email, Website, etc.).  
-It focuses on:  
-- Complaint volume & trends  
-- SLA performance (SLA met vs violated)  
-- Resolution time analysis  
-- Priority-based distribution  
-- Regional performance  
-- Issue & sub-issue patterns  
-- Customer satisfaction score analysis  
-- Team performance comparison  
+Status & SLA performance
 
-The dashboard provides clear KPIs and interactive visuals that help identify operational gaps and improve customer service quality.
+Complaints by region, channel, device, priority
 
----
+Monthly complaint trends
 
-## 📁 Repository Structure  
+Resolution time analysis
 
-Customer-Support-Complaint-Analysis-Power-BI-Dashboard/
-│
-├── data/
-│ └── customer_complaints_dataset.xlsx
-│
-├── screenshots/
-│ ├── 01_dashboard_overview.png
-│ ├── 02_complaint_trends.png
-│ ├── 03_region_analysis.png
-│ ├── 04_issue_type_breakdown.png
-│ └── 05_satisfaction_metrics.png
-│
-├── reports/
-│ ├── Customer_Complaint_Report.pdf
-│ └── Customer_Complaint_Report.pbix
-│
-└── README.md
+Team performance insights
 
+📌 Key Features of the Dashboard
+✔️ Overall KPIs
 
----
+Total Complaints: 200
 
-## 🗂 Dataset Description  
+Open Complaints: 7
 
-The dataset contains **realistic customer complaint fields**:
+Closed Complaints: 25
 
-| Column Name | Description |
-|------------|-------------|
-| **TicketID** | Unique complaint/ticket identifier |
-| **CustomerID** | Unique customer identifier (anonymized) |
-| **CreatedDate** | Date/time the complaint was created |
-| **ResolvedDate** | Date/time the complaint was resolved |
-| **Status** | Current status (Open, Closed, Pending, Resolved, Escalated) |
-| **IssueType** | Main issue category (Billing, Network, Service Failure, etc.) |
-| **SubIssue** | More specific complaint detail |
-| **Channel** | Complaint submission channel (App, Phone, Email, etc.) |
-| **Priority** | Complaint priority (High, Medium, Low) |
-| **ResolutionTimeHours** | Total hours taken to resolve ticket |
-| **SLA_DeadlineHours** | Allowed SLA time window |
-| **SLA_Compliance** | Yes/No – whether resolved within SLA |
-| **SatisfactionScore** | Customer satisfaction rating (1–5) |
-| **AssignedTeam** | Team handling the complaint |
-| **Region** | Customer region/area |
-| **PlanType** | Customer subscription plan type |
-| **DeviceType** | Device used by the customer |
-| **ComplaintDescription** | Text description of the issue |
+Resolved Complaints: 115
 
----
+Escalated Complaints: 5
 
-## 🧮 Key DAX Measures  
+In-Progress Complaints: 48
 
-```DAX
+Avg. Resolution Time: 24.98 Hours
+
+SLA Compliance: 37%
+
+✔️ Complaint Distribution
+
+By Region
+
+By Status
+
+By Channel (Call, Email, Social Media, Chat, USSD)
+
+By Priority (Low, Medium, High, Critical)
+
+By Device Type
+
+By Plan Type
+
+✔️ Time-Based Analysis
+
+Month-on-Month (MoM) complaint growth
+
+Monthly resolved complaints
+
+Trend visualization for 12 months
+
+📁 Dataset Information
+
+The dataset includes the following important columns:
+
+Column Name	Description
+TicketID	Unique ID for each complaint
+CustomerID	Unique customer identifier
+CreatedDate	Complaint creation date
+ResolvedDate	Issue resolution date
+Status	Complaint status (Open, Closed, In-Progress, etc.)
+IssueType	Main category of complaint
+SubIssue	Detailed sub-category
+Channel	Mode of complaint (Call, Chat, Email, etc.)
+Priority	Urgency level
+ResolutionTimeHours	Hours taken to resolve
+SLA_DeadlineHours	SLA commitment hours
+SLA_Compliance	Yes / No / No Response
+SatisfactionScore	Customer feedback rating
+AssignedTeam	Team handling the complaint
+Region	Customer’s region
+PlanType	Postpaid / Prepaid categories
+DeviceType	Android, iPhone, MiFi, Tablet, etc.
+ComplaintDescription	Text details of complaint
+🛠️ Tools & Technologies Used
+
+Power BI Desktop
+
+Power Query for data cleaning and transformation
+
+DAX for calculated measures
+
+Excel / CSV Dataset
+
+Data Modeling (Star Schema)
+
+📷 Dashboard Preview
+
+(Screenshot already included above in GitHub repository)
+
+📊 DAX Measures Used (Sample)
 Total Complaints = COUNT('Dataset'[TicketID])
+
+Open Complaints = 
+CALCULATE(COUNTROWS('Dataset'), 'Dataset'[Status] = "Open")
 
 SLA Compliance % =
 DIVIDE(
@@ -84,125 +111,45 @@ DIVIDE(
     COUNTROWS('Dataset')
 )
 
-Average Resolution Time (Hours) =
-AVERAGE('Dataset'[ResolutionTimeHours])
+🔍 Insights Summary
 
-Avg Satisfaction Score =
-AVERAGE('Dataset'[SatisfactionScore])
+The highest complaint load comes from Low priority issues.
 
-Resolution Time Variance =
-VAR AvgTime = [Average Resolution Time (Hours)]
-RETURN
-AVERAGE('Dataset'[ResolutionTimeHours] - AvgTime)
+Region-wise, most complaints originate from Khulna.
 
+Social Media and Email are the top complaint channels.
 
-📊 Dashboard Features
-✔ Key Metrics
+SLA performance is low (37%), indicating delayed resolutions.
 
-Total Complaints
+Device-related complaints are dominated by Android users.
 
-SLA Compliance %
+Complaints fluctuate significantly month to month, with peaks in March and July.
 
-Avg. Resolution Time (hours)
+📦 How to Use This Project
 
-Avg. Satisfaction Score
+Download the .pbix Power BI file from this repository.
 
-High Priority Complaint Ratio
+Download the dataset (xlsx/csv) file.
 
-✔ Complaint Analytics
+Open the report in Power BI Desktop.
 
-Trend of complaints over time
+Explore filters, slicers, and visual reports.
 
-Issue & Sub-Issue distribution
+Modify visuals or use your own dataset for customization.
 
-Channel performance comparison
+🧩 Future Improvements
 
-Priority-level analysis
+Add forecasting for complaints
 
-✔ Operational Efficiency
+Build automated Power BI refresh pipeline
 
-SLA performance analysis
+Include sentiment analysis using Python
 
-Resolution time deviation
+Add AI/ML-based issue classification
 
-Team-wise performance
+🤝 Connect With Me
 
-✔ Customer Experience
+If you like this project or want to collaborate:
 
-SatisfactionScore distribution
-
-Relationship between SLA & Satisfaction
-
-Issue types leading to low satisfaction
-
-✔ Regional Insights
-
-Complaints by Region
-
-Region-based SLA performance
-
-Key regional problem areas
-
-📷 Report Screenshots
-Dashboard Overview
-
-Complaint Trends
-
-Region Analysis
-
-Issue Type Breakdown
-
-Satisfaction Metrics
-
-🧠 Key Insights
-
-🔺 Network/Service-related issues are the highest contributors to total complaints.
-
-⚠️ High Priority tickets show the lowest SLA compliance, indicating resource bottlenecks.
-
-📉 SatisfactionScore drops significantly for complaints resolved beyond SLA.
-
-🌍 Region A & Region B show consistently higher complaint volume, requiring operational improvement.
-
-📞 App and Call Center channels receive the highest number of complaints, making them key focus areas for support optimization.
-
-🛠 How to View the Dashboard
-Option 1 — PDF Report (Quick View)
-
-Open:
-/reports/Customer_Complaint_Report.pdf
-
-Option 2 — Interactive Power BI File (.pbix)
-
-Requirements:
-
-Power BI Desktop (2023 or later)
-
-Steps:
-
-Download the .pbix file from the reports/ folder
-
-Open using Power BI Desktop
-
-Interact with slicers, charts, and pages
-
-🧑‍💻 Tech Stack
-
-Power BI Desktop
-
-Power Query
-
-DAX (Data Analysis Expressions)
-
-Excel
-
-📬 Contact
-
-Md Reazul Repon
-Data Analyst | Power BI | SQL | Python
-📧 Email: (add your email)
-🔗 GitHub: https://github.com/MReza07
-
-📄 License
-
-This project is released under the MIT License.
+📧 Email:reazulrepon@gmail.com
+🔗 GitHub Portfolio:
