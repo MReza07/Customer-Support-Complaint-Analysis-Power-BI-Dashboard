@@ -1,6 +1,7 @@
 📊 Customer Support Complaints Analysis – Power BI Dashboard
 
 This project presents an end-to-end Customer Support Complaint Analysis using a real-world inspired dataset. The goal is to help organizations monitor customer issue trends, evaluate SLA performance, and understand customer experience across channels, regions, and device types. The entire solution includes data cleaning, transformation, modeling, DAX measures, and an interactive Power BI dashboard.
+
 🚀 Project Overview
 
 Customer support teams handle large volumes of complaints through multiple channels such as email, chat, social media and calls. To improve service quality, it is essential to track complaint trends, SLA compliance, customer satisfaction, and resolution efficiency.
