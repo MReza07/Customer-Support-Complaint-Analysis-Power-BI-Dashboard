@@ -66,42 +66,42 @@ Trend visualization for 12 months
 
 The dataset includes the following important columns:
 
-Column Name Description
-TicketID	Unique ID for each complaint
+Column Name-----Description
+TicketID----Unique ID for each complaint
 
-CustomerID	Unique customer identifier
+CustomerID-----	Unique customer identifier
 
-CreatedDate	Complaint creation date
+CreatedDate-----Complaint creation date
 
-ResolvedDate	Issue resolution date
+ResolvedDate-----Issue resolution date
 
-Status	Complaint status (Open, Closed, In-Progress, etc.)
+Status-----Complaint status (Open, Closed, In-Progress, etc.)
 
-IssueType	Main category of complaint
+IssueType-----Main category of complaint
 
-SubIssue	Detailed sub-category
+SubIssue-----Detailed sub-category
 
-Channel	Mode of complaint (Call, Chat, Email, etc.)
+Channel-----Mode of complaint (Call, Chat, Email, etc.)
 
-Priority	Urgency level
+Priority-----Urgency level
 
-ResolutionTimeHours	Hours taken to resolve
+ResolutionTimeHours-----Hours taken to resolve
 
-SLA_DeadlineHours	SLA commitment hours
+SLA_DeadlineHours-----SLA commitment hours
 
-SLA_Compliance	Yes / No / No Response
+SLA_Compliance-----Yes / No / No Response
 
-SatisfactionScore	Customer feedback rating
+SatisfactionScore-----Customer feedback rating
 
-AssignedTeam	Team handling the complaint
+AssignedTeam-----Team handling the complaint
 
-Region	Customer’s region
+Region-----Customer’s region
 
-PlanType	Postpaid / Prepaid categories
+PlanType-----Postpaid / Prepaid categories
 
-DeviceType	Android, iPhone, MiFi, Tablet, etc.
+DeviceType-----Android, iPhone, MiFi, Tablet, etc.
 
-ComplaintDescription	Text details of complaint
+ComplaintDescription-----Text details of complaint
 
 ## 🛠️ Tools & Technologies Used
 
