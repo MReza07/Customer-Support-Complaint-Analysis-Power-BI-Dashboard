@@ -158,15 +158,6 @@ Explore filters, slicers, and visual reports.
 
 Modify visuals or use your own dataset for customization.
 
-## 🧩 Future Improvements
-
-Add forecasting for complaints
-
-Build automated Power BI refresh pipeline
-
-Include sentiment analysis using Python
-
-Add AI/ML-based issue classification
 
 ## 📬 Contact
 
