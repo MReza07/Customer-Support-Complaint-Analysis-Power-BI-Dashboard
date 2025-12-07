@@ -1,8 +1,8 @@
-📊 Customer Support Complaints Analysis – Power BI Dashboard
+## 📊 Customer Support Complaints Analysis – Power BI Dashboard
 
 This project presents an end-to-end Customer Support Complaint Analysis using a real-world inspired dataset. The goal is to help organizations monitor customer issue trends, evaluate SLA performance, and understand customer experience across channels, regions, and device types. The entire solution includes data cleaning, transformation, modeling, DAX measures, and an interactive Power BI dashboard.
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 Customer support teams handle large volumes of complaints through multiple channels such as email, chat, social media and calls. To improve service quality, it is essential to track complaint trends, SLA compliance, customer satisfaction, and resolution efficiency.
 
@@ -20,7 +20,8 @@ Resolution time analysis
 
 Team performance insights
 
-📌 Key Features of the Dashboard
+## 📌 Key Features of the Dashboard
+
 ✔️ Overall KPIs
 
 Total Complaints: 200
@@ -61,12 +62,11 @@ Monthly resolved complaints
 
 Trend visualization for 12 months
 
-📁 Dataset Information
+## 📁 Dataset Information
 
 The dataset includes the following important columns:
 
-Column Name
-Description
+Column Name Description
 TicketID	Unique ID for each complaint
 
 CustomerID	Unique customer identifier
@@ -102,7 +102,8 @@ PlanType	Postpaid / Prepaid categories
 DeviceType	Android, iPhone, MiFi, Tablet, etc.
 
 ComplaintDescription	Text details of complaint
-🛠️ Tools & Technologies Used
+
+## 🛠️ Tools & Technologies Used
 
 Power BI Desktop
 
@@ -114,11 +115,12 @@ Excel / CSV Dataset
 
 Data Modeling (Star Schema)
 
-📷 Dashboard Preview
+## 📷 Dashboard Preview
 
 (Screenshot already included above in GitHub repository)
 
-📊 DAX Measures Used (Sample)
+## 📊 DAX Measures Used (Sample)
+
 Total Complaints = COUNT('Dataset'[TicketID])
 
 Open Complaints = 
@@ -130,7 +132,7 @@ DIVIDE(
     COUNTROWS('Dataset')
 )
 
-🔍 Insights Summary
+## 🔍 Insights Summary
 
 The highest complaint load comes from Low priority issues.
 
@@ -144,7 +146,7 @@ Device-related complaints are dominated by Android users.
 
 Complaints fluctuate significantly month to month, with peaks in March and July.
 
-📦 How to Use This Project
+## 📦 How to Use This Project
 
 Download the .pbix Power BI file from this repository.
 
@@ -156,7 +158,7 @@ Explore filters, slicers, and visual reports.
 
 Modify visuals or use your own dataset for customization.
 
-🧩 Future Improvements
+## 🧩 Future Improvements
 
 Add forecasting for complaints
 
@@ -166,9 +168,15 @@ Include sentiment analysis using Python
 
 Add AI/ML-based issue classification
 
-🤝 Connect With Me
+## 📬 Contact
 
-If you like this project or want to collaborate:
+Md. Rezaul Repon
 
-📧 Email:reazulrepon@gmail.com
-🔗 GitHub Portfolio:https://github.com/MReza07
+Data Analyst (Power BI | SQL | Python)
+
+🔗 LinkedIn:www.linkedin.com/in/repon07
+
+🔗 GitHub: https://github.com/MReza07
+
+📧 Email: reazulrepon@gmail.com
+
